@@ -21,7 +21,7 @@ class ResultViewController: UIViewController {
         definitionLabel.text = currentAnimal.definition
     }
     
-    func findAnimal() -> Animal {
+    private func findAnimal() -> Animal {
         var animalCounter = [Animal : Int]()
         for answer in answers {
             animalCounter[answer.animal] = (animalCounter[answer.animal] ?? 0) + 1
